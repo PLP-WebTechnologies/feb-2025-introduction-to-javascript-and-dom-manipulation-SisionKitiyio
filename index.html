@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safari Adventures</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      text-align: center;
+      background-color: #2d572c;
+      color: white;
+      padding: 1em 0;
+      border-radius: 5px;
+    }
+
+    section {
+      margin: 20px 0;
+    }
+
+    .highlight {
+      color: darkorange;
+      font-weight: bold;
+    }
+
+    #dynamic-info {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #fff8e1;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #e68900;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="main-title">Safari Adventures</h1>
+    <p>Explore the wild like never before</p>
+  </header>
+
+  <section>
+    <h2>Our Tours</h2>
+    <ul>
+      <li>Maasai Mara Wildlife Safari</li>
+      <li>Amboseli Elephant Tour</li>
+      <li>Lake Nakuru Flamingo Watch</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Interactive Zone</h2>
+    <p id="dynamic-info">Click a button to explore more about our safaris!</p>
+    <button onclick="changeTitle()">Change Title</button>
+    <button onclick="highlightInfo()">Highlight Info</button>
+    <button onclick="addReview()">Add Review</button>
+    <button onclick="removeReview()">Remove Review</button>
+  </section>
+
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <p>"Absolutely breathtaking experience!" - A. Explorer</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Safari Adventures</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
